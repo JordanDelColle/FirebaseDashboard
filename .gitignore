@@ -1,0 +1,15 @@
+#  Node Modules
+/node_modules
+
+# .env
+.env
+.env-local
+.env-template
+
+# Parcel Development Files
+/.parcel-cache
+/dist
+/public
+
+# OS Files
+.DS_Store

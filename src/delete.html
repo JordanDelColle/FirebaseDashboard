@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="msapplication-TileColor" content="#620cb4" />
+    <meta name="theme-color" content="#620cb4" />
+    <meta
+      name="description"
+      content="Jordan's Garage Sale sells used movies at affordable prices."
+    />
+    <title>Jordan's Garage Sale</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicons/safari-pinned-tab.svg"
+      color="#c8112e"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/delete.js"></script>
+  </head>
+
+  <body>
+    <nav class="content-page-app-bar">
+      <div>
+        <img src="static/svg/branding/jordans-garage-sale-logo.svg" alt="Jordan's Garage Sale logo">
+          <h2>Jordan's Garage Sale</h2>
+      </div>
+      <ul class="site-links">
+        <li><a href="index.html" id="deleteToRead">home</a></li>
+        <li><a href="write.html" id="deleteToWrite">write</a></li>
+        <li><a href="update.html" id="deleteToUpdate">update</a></li>
+        <li><a href="delete.html">delete</a></li>
+      </ul>
+      <div class="empty-div"></div>
+     </li>
+
+ </nav>
+  <header class="page-header">
+    <h1>Delete Product</h1>
+    <p>remove the selected product from our inventory</p>
+  </header>
+ 
+  <main>
+
+    <form id="productFormDelete" class="add-new-product">
+      <div class="product-form-inner">
+        <div class="flexbox">
+          <div class="property-image form-control">
+            <div class="upload-image">
+              <img id="selectedProductImage" src="static/images/no-image-selected.png" alt="no image selected" width="405px" height="570px">
+            </div>
+           
+          </div>
+          <div>
+            <div class="product-name form-control">
+              <p id="errorMessageDelete"></p>
+              <p id="successMessageDelete"></p>
+            </div>
+            <div class="product-name form-control">
+              <h2 id="productTitleDelete">No product selected</h2>
+            </div>
+            <div class="product-name form-control">
+              <h2 id="productFormatDelete"></h2>
+            </div>
+            <div class="product-name form-control">
+              <h2 id="productPriceDelete"></h2>
+            </div>
+            <div class="submit-button form-control flexbox">
+              <button id="deleteButton" type="submit">delete</button>
+              <button id="exitButtonDelete">exit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+ 
+  </main>
+  </body>
+</html>

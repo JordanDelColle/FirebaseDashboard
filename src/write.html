@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="msapplication-TileColor" content="#620cb4" />
+    <meta name="theme-color" content="#620cb4" />
+    <meta
+      name="description"
+      content="Jordan's Garage Sale sells used movies at affordable prices."
+    />
+    <title>Jordan's Garage Sale</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicons/safari-pinned-tab.svg"
+      color="#c8112e"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/write.js"></script>
+  </head>
+
+  <body>
+    <nav class="content-page-app-bar">
+      
+      <div>
+        <img src="static/svg/branding/jordans-garage-sale-logo.svg" alt="Jordan's Garage Sale logo">
+
+          <h2>Jordan's Garage Sale</h2>
+ 
+      </div>
+    
+      <ul class="site-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="write.html">write</a></li>
+        <li><a href="update.html">update</a></li>
+        <li><a href="delete.html">delete</a></li>
+      </ul>
+  
+      <div class="empty-div"></div>
+     </li>
+
+ </nav>
+  <header class="page-header">
+    <h1>Add Product</h1>
+    <p>add a product to our inventory</p>
+  </header>
+    <main>
+      <form id="productFormWrite" class="add-new-product">
+        <div class="product-form-inner">
+          <div class="flexbox">
+            <div class="property-image form-control">
+              <div class="upload-image">
+                <img id="uploadImage" src="static/images/no-image-selected.png" alt="no image selected" width="405px" height="570px">
+              </div>   
+                <label for="displayImageWrite">Select image </label>
+                <input type="file" id="displayImageWrite" style="display:none"  class="select-file"   accept=".jpg, .png, .jpeg, .webp .gif">
+             
+            </div>
+            <div>
+              <div class="product-name form-control">
+                <p id="errorMessageWrite"></p>
+                <p id="successMessageWrite"></p>
+              </div>
+              <div class="product-name form-control">
+                <label for="productTitleWrite">Title</label>         
+                 <input id="productTitleWrite" type="text" placeholder="Citizen Kane" >
+              </div>
+              <div class="product-name form-control">
+                <label for="productPriceWrite">Price (CAD)</label>         
+                 <input id="productPriceWrite" type="number" placeholder="0.00" >
+              </div>
+              <div class="product-name form-control">
+                <label for="productFormatWrite">Format</label>         
+                 <input id="productFormatWrite" type="text" placeholder="DVD" >
+              </div>
+              <div class="product-name form-control">
+                <label for="productStarringWrite">Starring</label>         
+                 <input id="productStarringWrite" type="text" placeholder="Orson Welles" >
+              </div>
+              <div class="product-name form-control">
+                <label for="productRunningTimeWrite">Running time (minutes)</label>         
+                 <input id="productRunningTimeWrite" type="number" placeholder="119" >
+              </div>
+              <div class="product-name form-control">
+                <label for="productDiscsWrite">No. discs</label>         
+                 <input id="productDiscsWrite" type="number" placeholder="1" >
+              </div>
+              
+              <div class="submit-button form-control flexbox">
+                <button id="saveButtonWrite" type="submit">save</button>
+                <button id="exitButtonWrite">exit</button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+    
+      </form>
+   
+    </main>
+  </body>
+</html>
