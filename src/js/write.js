@@ -3,7 +3,6 @@ import {ref as databaseRef, push, set } from 'firebase/database';
 import { db, storage } from "./libs/firebase/firebaseConfig";
 
 document.querySelector("#displayImageWrite").addEventListener("change", onImageSelected);
-document.forms["productFormWrite"].addEventListener("submit", onAddProduct); 
 
 const writeTitle = document.querySelector('#productTitleWrite');
 const writePrice = document.querySelector('#productPriceWrite');
@@ -14,11 +13,20 @@ const writeDiscs = document.querySelector('#productDiscsWrite');
 const writeImage = document.querySelector(".upload-image img");
 const errorMessage = document.querySelector('#errorMessageWrite');
 const successMessage = document.querySelector('#successMessageWrite');
+document.getElementById("saveButtonWrite").addEventListener("click", onAddProduct); 
+document.getElementById("exitButtonWrite").addEventListener("click", onExit); 
 
 function onAddProduct(e) 
 {
     e.preventDefault();
     uploadNewProduct();
+}
+
+function onExit(e)
+{
+    event.preventDefault();
+    resetForm();
+    window.location.assign('index.html');
 }
 
 function resetForm() 
@@ -41,6 +49,8 @@ function onImageSelected(e)
 
 async function uploadNewProduct() 
 {
+    event.preventDefault();
+    console.log("AAAAAAAAA")
     const title = writeTitle.value.trim();
     const price = writePrice.value.trim();
     const format = writeFormat.value.trim();
