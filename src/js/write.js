@@ -43,14 +43,12 @@ function resetForm()
 function onImageSelected(e)
 {
     let file = e.target.files[0];
-    console.log(file);
     writeImage.src = URL.createObjectURL(file);
 }
 
 async function uploadNewProduct() 
 {
     event.preventDefault();
-    console.log("AAAAAAAAA")
     const title = writeTitle.value.trim();
     const price = writePrice.value.trim();
     const format = writeFormat.value.trim();
